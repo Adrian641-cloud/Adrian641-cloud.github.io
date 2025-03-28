@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+const quantities = document.querySelectorAll(".quantities") 
+
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Langar&family=Londrina+Shadow&family=Merienda:wght@300..900&family=Sixtyfour+Convergence&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Londrina+Shadow&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+
+
+
+<style>
+input {
+  	font-size: 22px;
+    }
+
+	
+body {
+	
+  font-family: "Langar", system-ui;
+  margin: 0 auto;
+  max-width: 600px;
+  background: rgba(56, 42, 30, 1);
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-family: "Bungee Spice", sans-serif;
+  text-align: center;
+  font-size: 75px;
+  color: orange;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: yellow;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(196, 142, 110, 10);
+  background: black;
+background: linear-gradient(to bottom, rgba(80, 45, 10, 0.9), rgba(139, 69, 19, 0.8)); 
+background: -webkit-linear-gradient(to bottom, rgba(80, 45, 10, 0.9), rgba(139, 69, 19, 0.8)); 
+background: -moz-linear-gradient(to bottom, rgba(80, 45, 10, 0.9), rgba(139, 69, 19, 0.8));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://vinbarista.com/uploads/news/cappuccino-la-gi-cach-lam-1-ly-cafe-cappuccino-chuan-vi-y-202212231043.png");
+}
+.second{
+  background-image: url("https://majestycoffee.com/cdn/shop/articles/americano_b74a8154-454b-4f74-9a6c-95fbc4152ed3.jpg?v=1684048195");
+}
+.dessert{
+  background-image: url("https://cdn.vox-cdn.com/thumbor/6kLvmWfhU4h64EhC0S6tsn714fI=/0x0:4032x3024/1200x900/filters:focal(1694x1190:2338x1834)/cdn.vox-cdn.com/uploads/chorus_image/image/59740845/IMG_1503.42.jpg");
+}
+.Last{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKytY6H89T6uWUzHH8u_-tvUCNdqSnNs2gfA&s");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+  <h1>Java Junction</h1>
+  <h2>A Hangout Cafe in the Heart of New York City</h2>
+  <div class="first">
+	  <input class="quantities" type="number" min="0" style="width: 50px">
+    <p>
+      <strong>Cappuccino</strong> <span class="price">$3.00</span><br />
+      <small>Crafted from a unique mix of bold Sierra Leone Bologi beans, paired with a medley of fresh greens like kale, chard, and beet greens, plus black-eyed peas, amaranth, sorrel, garlic, and a touch of spring onion for a savory twist.</small>
+    </p>
+  </div>
+</body>
+
+<div class="second">
+	<input class="quantities" type="number" min="0" style="width: 50px">
+  <p>Americano <span class="price">$2.99</span><br />
+  <small>A robust blend of rich coffee and velvety water, perfectly balanced with hints of caramelized sweetness. The perfect choice for those who enjoy a bold, uncomplicated brew.</small></p>
+</div>
+
+  
+<div class="dessert">
+	<input class="quantities" type="number" min="0" style="width: 50px">
+  <p>Latte   <span class="price">$2.45</span><br />
+  <small>A smooth espresso drink with velvety steamed milk, topped with a light, frothy foam. A gentle sweetness with a creamy finish, perfect for any time of the day.</small></p>
+</div>
+
+<div class="Last">
+	<input class="quantities" type="number" min="0" style="width: 50px">
+  <p>Espresso  <span class="price">$4.99</span><br />
+  <small>A sweet delicious coffee drink with The bitterness that hits you upfront but gives way to a pleasant sweetness and crisp acidity that doesn't leave an overly sour aftertaste, perfect to start your mournings. </small></p>
+</div>
+
+ <br><br>
+<input id="Name" placeholder="Your name">
+  <input id="Email" type="email" placeholder="Your email">
+  <input id="submit" type="submit">
+ <br><br>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDl5TwH9hNmbFxXUIg8UIVdP25uwUhXkho",
+    authDomain: "adrian123321.firebaseapp.com",
+    databaseURL: "https://adrian123321-default-rtdb.firebaseio.com",
+    projectId: "adrian123321",
+    storageBucket: "adrian123321.firebasestorage.app",
+    messagingSenderId: "1012057675036",
+    appId: "1:1012057675036:web:697ccfe6961f3fc31a56d9",
+    measurementId: "G-9ZVYL81VJH"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app); 
+  const Name = document.querySelector("#Name") 
+  const Email = document.querySelector("#Email")
+  document.querySelector('#submit').addEventListener('click', Submit)
+  	const quantities = document.querySelectorAll(".quantities")
+ 	const itemsList = ["Cappucino", "Americano", "Latte"]
+	const prices = document.querySelectorAll(".price") 
+
+
+
+
+  function Submit() {
+    const timestamp = buildTimestamp()
+		let total = 0
+		let cart = { }
+			for  (let i=0; i<quantities.length; i=i+1) {
+			  if (quantities[i].value != "0" && quantities[i].value != "") {	
+					let price = prices[i].innerHTML.replace('$', '')
+					total = total + quantities[i].value * price 
+					
+			    cart[itemsList[i]] = parseInt(quantities[i].value) 
+			  }
+			  quantities[i].value = ""
+			}
+  
+    set(ref(db, timestamp), {
+  	  Name: Name.value,
+        email: Email.value,
+				cart: cart,
+			totalPrice: total,
+      	paid: "not yet",
+			
+    });
+
+    Name.value = ""
+    Email.value = ""
+  }
+
+  function buildTimestamp() {
+  	  const now = new Date();
+  	  let timestamp = now.getFullYear().toString() + "/";
+  	  //const month = now.toLocaleString('default', { month: 'long' });
+
+  	  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+  	  month = month.toString()
+  	  month = addLeadingZero(month)
+  	  timestamp += month + "/"; 
+
+  	  let date = now.getDate().toString()
+  	  date = addLeadingZero(date)
+  	  timestamp += date + "/";
+
+  	  let hours = now.getHours().toString()
+  	  hours = addLeadingZero(hours)
+  	  timestamp += hours + ":";
+
+  	  let minutes = now.getMinutes().toString()
+  	  minutes = addLeadingZero(minutes)
+  	  timestamp += minutes + ":";
+
+  	  let seconds = now.getSeconds().toString()
+  	  seconds = addLeadingZero(seconds)
+  	  timestamp += seconds;
+
+  	  return timestamp
+  	}
+
+  	function addLeadingZero(units) {
+  		if (units.length < 2) {
+  			units = "0" + units
+  		}
+  		return units
+  	}	
+		
+	
+</script>
+
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
